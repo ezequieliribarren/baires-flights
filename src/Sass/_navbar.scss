@@ -1,0 +1,45 @@
+.navbar {
+    background: linear-gradient(180deg, #00012D 0%, rgba(0, 1, 45, 0.00) 100%);
+    ;
+    padding-right: 2rem;
+
+    .nav-link {
+        width: 7rem;
+        margin: 0 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .esp-en {
+        display: flex;
+        align-items: center;
+
+        button {
+            padding: 0.2rem 0.5;
+            margin: 0 0.2rem;
+            background-color: transparent;
+        }
+
+        .active-language {
+            border-radius: 4.637px 4.637px;
+            border: 0.927px solid var(--Blanco, #FFF);
+            transition: border 0.7s ease;
+            /* Efecto de transición para el borde */
+        }
+
+        .inactive-language {
+            border-radius: 0;
+            border: 0.927px solid transparent;
+            transition: border 0.7s ease;
+        }
+
+    }
+
+    .contact {
+        border-radius: 23.187px 4.637px;
+        background: #FFCF00;
+        width: 184.496px;
+        height: 35.557px;
+    }
+}
