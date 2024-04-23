@@ -1,14 +1,19 @@
 .navbar {
     background: linear-gradient(180deg, #00012D 0%, rgba(0, 1, 45, 0.00) 100%);
-    ;
     padding-right: 2rem;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 
     .nav-link {
-        width: 7rem;
-        margin: 0 0.5rem;
+        width: 10rem;
+        margin: 0 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.8rem;
+        color: white;
     }
 
     .esp-en {
@@ -16,9 +21,10 @@
         align-items: center;
 
         button {
-            padding: 0.2rem 0.5;
-            margin: 0 0.2rem;
+            padding: 0.2rem 1rem;
+            margin: 0 0.5rem;
             background-color: transparent;
+            color: white;
         }
 
         .active-language {

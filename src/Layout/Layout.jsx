@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Footer/Footer'
+import Header from '../Components/Header/Header'
 
-const Layout = ({children}) => {
+const Layout = ({children, imgUrl, height}) => {
   return (
     <>
-<Navbar/>
+<Header imgUrl={imgUrl} height={height}/>
 {children}
 <Footer/>
     </>

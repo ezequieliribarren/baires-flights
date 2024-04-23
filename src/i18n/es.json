@@ -1,16 +1,17 @@
 {
-
     "NOSOTROS": "Nosotros",
     "SERVICIOS": "Servicios",
-    "S1": "Vuelos de bautismo",
-    "S2": "Experiencias aéreas",
-    "S3": "Piloto por un día",
-    "S4": "Traslados aéreos",
-    "S5": "Vuelos en helicóptero",
-    "S6": "Servicio 6",
-    "S7": "Paracaidismo",
-    "S8": "Day tour Martín García",
-    "S9": "Circuito sector Oeste",
-    "S10": "Circuito sector Norte",
-    "CONTACTO": "CONTACTO"
+    "CONTACTO": "CONTACTO",
+    "SERVICIOS_DETALLE": {
+        "S1": "Vuelos de bautismo",
+        "S2": "Experiencias aéreas",
+        "S3": "Piloto por un día",
+        "S4": "Traslados aéreos",
+        "S5": "Vuelos en helicóptero",
+        "S6": "Paracaidismo",
+        "S7": "Day tour Martín García",
+        "S8": "Circuito sector Oeste",
+        "S9": "Circuito sector Norte",
+        "S10": "Destinos internacionales"
+    }
 }
