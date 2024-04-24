@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import CallActionServices from '../CallActionServices/CallActionServices';
 
-const Header = ({ height, imgUrl }) => {
+const Header = ({ height, imgUrl, changeLanguage, selectedLanguage }) => {
   return (
     <header
       className={height}
@@ -13,8 +13,8 @@ const Header = ({ height, imgUrl }) => {
         backgroundRepeat: "no-repeat"
       }}
     >
-      <Navbar />
-      <CallActionServices/>
+      <Navbar changeLanguage={changeLanguage} selectedLanguage={selectedLanguage} />
+      <CallActionServices changeLanguage={changeLanguage} selectedLanguage={selectedLanguage}/>
     </header>
   );
 };

@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { HashLink as Link } from 'react-router-hash-link';
 
-const Navbar = () => {
-    const { t, i18n } = useTranslation();
-    const [selectedLanguage, setSelectedLanguage] = useState('es'); 
-
-
-    const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang);
-        setSelectedLanguage(lang); // Actualizar el estado del idioma seleccionado
-    };
+const Navbar = ({ changeLanguage, selectedLanguage }) => {
+    const { t } = useTranslation();
 
     return (
         <nav className="navbar navbar-expand-lg ">
@@ -29,36 +22,27 @@ const Navbar = () => {
                                 {t("SERVICIOS")}
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" href="#">{t("S1")}</Link></li>
-                                <li><Link className="dropdown-item" href="#">{t("S2")}</Link></li>
-                                <li><Link className="dropdown-item" href="#">{t("S3")}</Link></li>
-                                <li><Link className="dropdown-item" href="#">{t("S4")}</Link></li>
-                                <li><Link className="dropdown-item" href="#">{t("S5")}</Link></li>
-                                <li><Link className="dropdown-item" href="#">{t("S6")}</Link></li>
-                                <li><Link className="dropdown-item" href="#">{t("S7")}</Link></li>
-                                <li><Link className="dropdown-item" href="#">{t("S8")}</Link></li>
-                                <li><Link className="dropdown-item" href="#">{t("S9")}</Link></li>
-                                <li><Link className="dropdown-item" href="#">{t("S10")}</Link></li>
+                                {Object.keys(t("SERVICIOS_DETALLE")).map((key) => (
+                                    <li key={key}><Link className="dropdown-item" href="#">{t(`SERVICIOS_DETALLE.${key}`)}</Link></li>
+                                ))}
                             </ul>
                         </li>
                         <li className="nav-item esp-en">
                             <div className='nav-link'>
-                                                        <button
-                                className={` ${selectedLanguage === 'es' ? 'active-language' : 'inactive-language'}`}
-                                onClick={() => changeLanguage('es')}
-                            >
-                                ES
-                            </button>
-                            /
-                            <button
-                                className={` ${selectedLanguage === 'en' ? 'active-language' : 'inactive-language'}`}
-                                onClick={() => changeLanguage('en')}
-                            >
-                                EN
-                            </button>
+                                <button
+                                    className={` ${selectedLanguage === 'es' ? 'active-language' : 'inactive-language'}`}
+                                    onClick={() => changeLanguage('es')}
+                                >
+                                    ES
+                                </button>
+                                /
+                                <button
+                                    className={` ${selectedLanguage === 'en' ? 'active-language' : 'inactive-language'}`}
+                                    onClick={() => changeLanguage('en')}
+                                >
+                                    EN
+                                </button>
                             </div>
-
-
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link contact">{t("CONTACTO")}</Link>

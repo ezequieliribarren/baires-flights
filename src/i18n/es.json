@@ -13,5 +13,25 @@
         "S8": "Circuito sector Oeste",
         "S9": "Circuito sector Norte",
         "S10": "Destinos internacionales"
-    }
+    },
+    "EXPERIENCIA": "Viví la experiencia",
+    "MEDIDA": "Vuelos a medida",
+    "VOLVER": "Volver",
+    "FORM-IDA-VUELTA": "Ida y vuelta",
+    "FORM-SOLO-IDA": "Solo ida",
+    "FORM-ORIGEN": "Origen",
+    "FORM-DESTINO": "Destino",
+    "FORM-PARTIDA": "Partida",
+    "FORM-REGRESO": "Regreso",
+    "FORM-PASAJEROS": "Pasajeros",
+    "SIGUIENTE": "SIGUIENTE",
+    "FORM-NOMBRE": "Nombre",
+    "FORM-APELLIDO": "Apellido",
+    "FORM-EMAIL": "Email",
+    "FORM-TEL": "Teléfono",
+    "COTIZAR": "COTIZAR",
+    "N-EXPERIENCIAS": "Nuestras Experiencias",
+    "PILOTO-POR-UN-DIA": "Piloto por un día"
+
+
 }

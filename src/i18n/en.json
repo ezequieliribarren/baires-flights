@@ -13,5 +13,21 @@
         "S8": "West Sector Circuit",
         "S9": "North Sector Circuit",
         "S10": "International Destinations"
-    }
+    },
+    "EXPERIENCIA": "Live the experience",
+    "MEDIDA": "Customized flights",
+    "VOLVER": "Back",
+    "FORM-IDA-VUELTA": "Round trip",
+    "FORM-SOLO-IDA": "One way",
+    "FORM-ORIGEN": "Origin",
+    "FORM-DESTINO": "Destination",
+    "FORM-PARTIDA": "Departure",
+    "FORM-REGRESO": "Return",
+    "FORM-PASAJEROS": "Passengers",
+    "SIGUIENTE": "NEXT",
+    "FORM-NOMBRE": "First Name",
+    "FORM-APELLIDO": "Last Name",
+    "FORM-EMAIL": "Email",
+    "FORM-TEL": "Phone",
+    "COTIZAR": "QUOTE"
 }

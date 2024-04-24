@@ -29,6 +29,8 @@ i18next.use(initReactI18next)
 )
 
 const router = createHashRouter([
+
+  
   {
     path: "/",
     element: (

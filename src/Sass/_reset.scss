@@ -8,5 +8,72 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+
+    h1 {
+        font-size: cormorant-bold;
+        font-size: 7rem;
+        color: white;
+    }
+
+    h2 {
+        font-size: 5rem;
+        font-family: bhutuka;
+        color: white;
+    }
+
+    h3 {
+        font-size: cormorant-bold;
+        font-size: 3rem;
+        color: white;
+    }
+h5{
+    font-family: roboto;
+    font-size: 1.3rem;
+    color: white;
+}
+
+    body {
+        background-color: #00012D;
+    }
+
+
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.margin-title {
+    margin: 3rem 0;
+}
+
+.none{
+    display: none !important;
+}
+
+// FUENTES
+@font-face {
+    font-family: "cormorant-bold";
+    src: url(/public/fonts/cormorant-bold.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "bhutuka";
+    src: url(/public/fonts/bhutuka.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(/public/fonts/roboto.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url(/public/fonts/roboto-bold.ttf);
+    font-display: swap;
 }
 
