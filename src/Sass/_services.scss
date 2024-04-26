@@ -1,13 +1,37 @@
-#services{
+#services {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 3rem 0;
-}.card-services {
+}
+
+.card-services {
     border-radius: 20.744px 4.149px !important;
     border: 1.659px solid #FFF !important;
     width: 37rem;
     height: 47rem;
     margin: 2rem;
     background-color: transparent !important;
+}
+
+
+// SERVICIO DETAIL
+
+.contenedor-descripcion-servicio {
+    border-radius: 25px 5px;
+    border: 2px solid #FFF;
+    background: var(--azul-profundo, #00012D);
+    box-shadow: 10px 10px 25px 0px rgba(255, 255, 255, 0.20);
+    display: flex;
+    align-items: center;
+
+    .caja-servicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 15rem;
+        border-right: 1px solid white ;
+
+    }
 }

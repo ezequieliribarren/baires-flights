@@ -8,7 +8,7 @@ const Navbar = ({ changeLanguage, selectedLanguage }) => {
     return (
         <nav className="navbar navbar-expand-lg ">
             <div className="container-fluid">
-                <Link className="navbar-brand" href="#"><img src="images/logo.png" alt="" /></Link>
+                <Link to='/' className="navbar-brand"><img src="images/logo.png" alt="" /></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -23,34 +23,34 @@ const Navbar = ({ changeLanguage, selectedLanguage }) => {
                             </Link>
                             <ul className="dropdown-menu">
                                     <li >
-                                        <Link className="dropdown-item" >
+                                        <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S1`)}`} className="dropdown-item" >
                                             {t(`SERVICIOS_DETALLE.S1`)}
                                         </Link>
-                                        <Link className="dropdown-item" >
+                                        <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S2`)}`}  className="dropdown-item" >
                                             {t(`SERVICIOS_DETALLE.S2`)}
                                         </Link>
-                                        <Link className="dropdown-item" >
+                                        <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S3`)}`}  className="dropdown-item" >
                                             {t(`SERVICIOS_DETALLE.S3`)}
                                         </Link>
-                                        <Link className="dropdown-item" >
+                                        <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S4`)}`}  className="dropdown-item" >
                                             {t(`SERVICIOS_DETALLE.S4`)}
                                         </Link>
-                                        <Link className="dropdown-item" >
+                                        <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S5`)}`}  className="dropdown-item" >
                                             {t(`SERVICIOS_DETALLE.S5`)}
                                         </Link>
-                                        <Link className="dropdown-item" >
+                                        <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S6`)}`}  className="dropdown-item" >
                                             {t(`SERVICIOS_DETALLE.S6`)}
                                         </Link>
-                                        <Link className="dropdown-item" >
+                                        <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S7`)}`}  className="dropdown-item" >
                                             {t(`SERVICIOS_DETALLE.S7`)}
                                         </Link>
-                                        <Link className="dropdown-item" >
+                                        <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S8`)}`}  className="dropdown-item" >
                                             {t(`SERVICIOS_DETALLE.S8`)}
                                         </Link>
-                                        <Link className="dropdown-item" >
+                                        <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S9`)}`}  className="dropdown-item" >
                                             {t(`SERVICIOS_DETALLE.S9`)}
                                         </Link>
-                                        <Link className="dropdown-item" >
+                                        <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S10`)}`}  className="dropdown-item" >
                                             {t(`SERVICIOS_DETALLE.S10`)}
                                         </Link>
 

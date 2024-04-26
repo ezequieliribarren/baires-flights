@@ -20,7 +20,7 @@ const ServicioDetail = () => {
     useEffect(() => {
         // Convertir el título de la URL a minúsculas y quitar los guiones
         const formattedTitle = title.toLowerCase().replace(/-/g, " ");
-        
+
         // Buscar el servicio correspondiente por su título
         const servicioEncontrado = serviciosData.servicios.find(servicio => servicio.title.toLowerCase() === formattedTitle);
         setServicio(servicioEncontrado);
@@ -39,8 +39,29 @@ const ServicioDetail = () => {
             inherit={"inherit"}
             none={"none"}
             height={"middle"}
-            imgUrl={"images/header2.png"}
+            imgUrl={servicio.imgHeader} // Usar la imagen del encabezado del servicio
         >
+            <div className="container-fluid p-5">
+                <div className='row contenedor-descripcion-servicio'>
+                    <div className="col-sm-3 caja-servicio">
+                        <h5><img src="images/servicios/reloj.png" alt="" />Duración</h5>
+                        <h4>{servicio.duracion}</h4>
+                    </div>
+                    <div className="col-sm-3 caja-servicio">
+                        <h5><img src="images/servicios/person.png" alt="" />Capacidad Máxima</h5>
+                        <h4>{servicio.duracion}</h4>
+                    </div>
+                    <div className="col-sm-3 caja-servicio">
+                        <h5><img src="images/servicios/map.png" alt="" />Partida</h5>
+                        <h4>{servicio.partida}</h4>
+                    </div>
+                    <div className="col-sm-3 caja-servicio">
+                        <h5><img src="images/servicios/recorrido.png" alt="" />Recorrido</h5>
+                        <h4>{servicio.recorrido}</h4>
+                    </div>
+                </div>
+            </div>
+
             <Contacto />
         </Layout>
     );
