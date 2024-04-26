@@ -4,7 +4,7 @@ import en from '../../i18n/en.json'; // Importa el archivo JSON para inglés
 import Typed from 'typed.js';
 import { useTranslation } from 'react-i18next';
 
-const CallActionServices = ({ changeLanguage, selectedLanguage }) => {
+const CallActionServices = ({ changeLanguage, selectedLanguage, none, inherit, contentH1, end }) => {
     const [index, setIndex] = useState(0);
     const { t } = useTranslation();
     const services = selectedLanguage === 'es' ? es : en; // Utiliza el idioma seleccionado para obtener los servicios
@@ -51,14 +51,22 @@ const CallActionServices = ({ changeLanguage, selectedLanguage }) => {
     }, [index, serviceKeys, services, selectedLanguage, t]); // Agrega selectedLanguage y t como dependencias
 
     return (
+        <> 
         <div style={{ position: 'absolute', bottom: '10px', left: '10px' }}>
-            <h1 >
-                <span id="typed"></span>
-            </h1>
-            <h2>
-               {t("EXPERIENCIA")}
-            </h2>
-        </div>
+            <div className={none}>
+                <h1>
+                    <span id="typed"></span>
+                </h1>
+                <h2>
+                    {t("EXPERIENCIA")}
+                </h2>
+            </div>
+        </div>  
+        <div className={end}>
+                <h1 className={inherit}>{contentH1}</h1> 
+            </div>
+        </>
+
 
 
     );

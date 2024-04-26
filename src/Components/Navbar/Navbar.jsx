@@ -22,9 +22,42 @@ const Navbar = ({ changeLanguage, selectedLanguage }) => {
                                 {t("SERVICIOS")}
                             </Link>
                             <ul className="dropdown-menu">
-                                {Object.keys(t("SERVICIOS_DETALLE")).map((key) => (
-                                    <li key={key}><Link className="dropdown-item" href="#">{t(`SERVICIOS_DETALLE.${key}`)}</Link></li>
-                                ))}
+                                    <li >
+                                        <Link className="dropdown-item" >
+                                            {t(`SERVICIOS_DETALLE.S1`)}
+                                        </Link>
+                                        <Link className="dropdown-item" >
+                                            {t(`SERVICIOS_DETALLE.S2`)}
+                                        </Link>
+                                        <Link className="dropdown-item" >
+                                            {t(`SERVICIOS_DETALLE.S3`)}
+                                        </Link>
+                                        <Link className="dropdown-item" >
+                                            {t(`SERVICIOS_DETALLE.S4`)}
+                                        </Link>
+                                        <Link className="dropdown-item" >
+                                            {t(`SERVICIOS_DETALLE.S5`)}
+                                        </Link>
+                                        <Link className="dropdown-item" >
+                                            {t(`SERVICIOS_DETALLE.S6`)}
+                                        </Link>
+                                        <Link className="dropdown-item" >
+                                            {t(`SERVICIOS_DETALLE.S7`)}
+                                        </Link>
+                                        <Link className="dropdown-item" >
+                                            {t(`SERVICIOS_DETALLE.S8`)}
+                                        </Link>
+                                        <Link className="dropdown-item" >
+                                            {t(`SERVICIOS_DETALLE.S9`)}
+                                        </Link>
+                                        <Link className="dropdown-item" >
+                                            {t(`SERVICIOS_DETALLE.S10`)}
+                                        </Link>
+
+
+                                    </li>
+                             
+
                             </ul>
                         </li>
                         <li className="nav-item esp-en">

@@ -7,6 +7,8 @@ import { initReactI18next } from 'react-i18next';
 import en from './i18n/en.json'
 import es from './i18n/es.json'
 import Root from './Routes/Root';
+import Experiencias from './Routes/Experiencias';
+import ServicioDetail from './Components/ServicioDetail/ServicioDetail';
 
 i18next.use(initReactI18next)
 .init({
@@ -35,6 +37,19 @@ const router = createHashRouter([
     path: "/",
     element: (
           <Root />
+    ),
+  },
+  {
+    path: "/experiencias",
+    element: (
+          <Experiencias />
+    ),
+  },
+
+  {
+    path: "/experiencias/:title",
+    element: (
+          <ServicioDetail />
     ),
   },
 

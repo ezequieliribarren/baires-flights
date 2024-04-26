@@ -1,16 +1,40 @@
+
+.container-slider-services{
+height: 65rem !important;
+overflow: hidden;
+
 .slick-slide-img {
-    max-width: 100%;
     transition: all 0.4s ease-in-out;
 }
 
 .slick-center {
-    transform: scale(1.3);
-    transition: all 0.4s ease-in-out;
+        margin: 3rem 0.5rem;
+        .item-slider-services{
+                 transform: scale(1.2);
+        transition: all 0.4s ease-in-out;   
+        }
 }
 
-.slick-slide img {
-    transform: scale(0.8);
+.slick-slide {
+    transform: scale(0.9);
     transition: all;
-    padding: 40px 0;
+}
+
+.item-slider-services {
+background-color: transparent !important;
+    border-radius: 25px 5px !important;
+    height: 55rem !important;
+     border: 2px solid #FFF !important;   
+     padding: 0 !important;
+     img{
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+     }
+
+}
+
+
+
 }
 

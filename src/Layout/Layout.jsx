@@ -2,10 +2,10 @@ import React from 'react'
 import Footer from '../Components/Footer/Footer'
 import Header from '../Components/Header/Header'
 
-const Layout = ({children, imgUrl, height, changeLanguage, selectedLanguage}) => {
+const Layout = ({children, imgUrl, height, changeLanguage, selectedLanguage, none, contentH1, end}) => {
   return (
     <>
-      <Header changeLanguage={changeLanguage} selectedLanguage={selectedLanguage} imgUrl={imgUrl} height={height}/>
+      <Header end={end} contentH1={contentH1} changeLanguage={changeLanguage} selectedLanguage={selectedLanguage} none ={none} imgUrl={imgUrl} height={height}/>
 {children}
 <Footer/>
     </>

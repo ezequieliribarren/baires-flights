@@ -1,12 +1,12 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import { useTranslation } from 'react-i18next'; // Importa useTranslation aquí
+import React from 'react'
+import { useTranslation } from 'react-i18next';
 import { HashLink as Link } from 'react-router-hash-link';
 
-const Sliderservicios = () => {
+
+const CardServices = () => {
+
     const { t } = useTranslation(); // Usa useTranslation dentro del componente
+
 
     const servicios = [
         {
@@ -70,42 +70,21 @@ const Sliderservicios = () => {
             img: "images/servicios/internacionales.png"
         }
     ];
-
-    const settings = {
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        speed: 500,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        infinite: true,
-        dots: false,
-
-    };
-
     return (
-        <div className='container-slider-services'>
-            <Slider className='slider-services' {...settings}>
-                {servicios.map(service => (
-                    <div className="card item-slider-services" key={service.id}>
+        <section id='services'>
+            {servicios.map(service => (
+                <div className="card card-services" key={service.id}>
+                    <Link to={`/experiencias/${service.title}`}>
                         <img src={service.img} className="card-img-top" alt={service.title} />
                         <div className="card-body">
                             <h4 className="card-title">{service.title}</h4>
                             <p>{service.description}</p>
-                            <Link>+</Link>
                         </div>
-                    </div>
-                ))}
-
-
-
-            </Slider>
-        </div>
-
+                    </Link>
+                </div>
+            ))}
+        </section>
     );
 };
 
-export default Sliderservicios;
-
-
+export default CardServices;

@@ -6,6 +6,11 @@
     width: 100%;
     z-index: 1000;
 
+    .navbar-nav{
+        display: flex !important;
+        align-items: center !important;
+    }
+
     .nav-link {
         width: 10rem;
         margin: 0 2rem;
@@ -47,5 +52,6 @@
         background: #FFCF00;
         width: 184.496px;
         height: 35.557px;
+        color: #00012D;
     }
 }

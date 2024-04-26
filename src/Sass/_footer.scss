@@ -1,0 +1,45 @@
+footer {
+    background: var(--azul-claro, #333457);
+    padding-top: 3rem;
+    border-top: 1px solid #EEB880;
+
+    .line {
+        width: 85%;
+        height: 1px;
+        background-color: white;
+    }
+
+    .links-footer {
+        h4 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .redes-logo-footer {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 4rem;
+    }
+
+    .redes-footer {
+        display: flex;
+        flex-direction: column;
+        margin-left: 4rem;
+
+        a {
+            font-family: roboto;
+            font-size: 1.8rem;
+            color: var(--Amarillo, #FFCF00);
+            margin: 1rem 0;
+
+            img{
+                margin-right: 1rem;
+            }
+
+
+        }
+
+    }
+
+}

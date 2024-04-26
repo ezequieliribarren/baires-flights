@@ -55,7 +55,7 @@ const VuelosAMedida = () => {
                         
                     </div>
                     <div className='col-sm-2 siguiente-a-medida'>
-                    <button onClick={toggleFormularios}>{t("SIGUIENTE")}</button>
+                    <button type="button" onClick={toggleFormularios}>{t("SIGUIENTE")}</button>
                     </div>
                 </form>
 
@@ -95,7 +95,7 @@ const VuelosAMedida = () => {
                         <input type="tel" />
                     </div> 
                     <div className='col-sm-2 siguiente-a-medida'>
-                        <button className='cotizar-a-medida'>{t("COTIZAR")}</button>
+                    <button type="button" className='cotizar-a-medida'>{t("COTIZAR")}</button>
                     </div>
                 </form>
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import CallActionServices from '../CallActionServices/CallActionServices';
 
-const Header = ({ height, imgUrl, changeLanguage, selectedLanguage }) => {
+const Header = ({ height, imgUrl, changeLanguage, selectedLanguage, none, inherit, contentH1, end }) => {
   return (
     <header
       className={height}
@@ -14,7 +14,7 @@ const Header = ({ height, imgUrl, changeLanguage, selectedLanguage }) => {
       }}
     >
       <Navbar changeLanguage={changeLanguage} selectedLanguage={selectedLanguage} />
-      <CallActionServices changeLanguage={changeLanguage} selectedLanguage={selectedLanguage}/>
+      <CallActionServices changeLanguage={changeLanguage} selectedLanguage={selectedLanguage} none= {none} inherit={inherit} contentH1={contentH1} end={end}/>
     </header>
   );
 };

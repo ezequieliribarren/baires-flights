@@ -5,57 +5,15 @@
 
 }
 
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-
-    h1 {
-        font-size: cormorant-bold;
-        font-size: 7rem;
-        color: white;
-    }
-
-    h2 {
-        font-size: 5rem;
-        font-family: bhutuka;
-        color: white;
-    }
-
-    h3 {
-        font-size: cormorant-bold;
-        font-size: 3rem;
-        color: white;
-    }
-h5{
-    font-family: roboto;
-    font-size: 1.3rem;
-    color: white;
-}
-
-    body {
-        background-color: #00012D;
-    }
-
-
-}
-
-
-.text-center {
-    text-align: center;
-}
-
-.margin-title {
-    margin: 3rem 0;
-}
-
-.none{
-    display: none !important;
-}
-
-// FUENTES
 @font-face {
     font-family: "cormorant-bold";
     src: url(/public/fonts/cormorant-bold.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "cormorant";
+    src: url(/public/fonts/cormorant.ttf);
     font-display: swap;
 }
 
@@ -77,3 +35,107 @@ h5{
     font-display: swap;
 }
 
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    h1 {
+        font-family: cormorant-bold !important;
+        font-size: 7rem;
+        color: white;
+    }
+
+    h2 {
+        font-size: 5rem;
+        font-family: bhutuka;
+        color: white;
+    }
+
+    h3 {
+        font-family: cormorant-bold !important;
+        font-size: 3rem;
+        color: white;
+    }
+
+    h4 {
+        font-family: cormorant-bold !important;
+        font-size: 2.5rem !important;
+        color: white !important;
+    }
+
+    h5 {
+        font-family: roboto;
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    body {
+        background-color: #00012D;
+    }
+
+    p {
+        font-size: 1.8rem;
+        color: white;
+        font-family: roboto;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: white;
+        font-family: roboto;
+        font-size: 1.8rem;
+    }
+
+}
+
+.button-1 {
+    border-radius: 25px 5px;
+    border: 2px solid var(--Amarillo, #FFCF00);
+    background-color: transparent;
+    color: #FFCF00;
+    width: 19rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    font-family: roboto-bold;
+}
+
+.button-2 {
+    border-radius: 25px 5px;
+    border: 2px solid var(--Amarillo, #FFCF00);
+    width: 19rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    font-family: roboto-bold;
+    background-color: #FFCF00;
+    color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-title {
+    margin: 3rem 0;
+}
+
+.none {
+    display: none !important;
+}
+
+.inherit {
+    display: inherit !important;
+}
+
+.end {
+    position: absolute;
+    bottom: 50% !important;
+
+    h1 {
+        color: var(--azul-profundo, #00012D);
+        font-size: 5.5rem;
+    }
+}
+
+
+
+// FUENTES
