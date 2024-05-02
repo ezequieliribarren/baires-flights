@@ -1,6 +1,6 @@
 #contacto {
-    margin-top: 8rem;
     background: linear-gradient(180deg, #333457 0%, #00012D 100%);
+    margin-bottom: 4rem;
 
     h2 {
         color: #EEB880;
@@ -120,6 +120,7 @@
                 flex-direction: column;
                 align-items: center;
             }
+            
         }
 
         .form-group,
@@ -128,6 +129,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 2rem;
         }
     }
 }

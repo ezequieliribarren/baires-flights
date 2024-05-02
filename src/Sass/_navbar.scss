@@ -1,19 +1,21 @@
 .navbar {
-    background: linear-gradient(180deg, #00012D 0%, rgba(0, 1, 45, 0.00) 100%);
+    background: linear-gradient(180deg, #00012D 0%, rgba(0, 1, 45, 0.00) 102%);
+    box-shadow: rgba(0, 1, 45, 0.00) 2px 2px 2px;
     padding-right: 2rem;
     position: fixed !important;
     top: 0;
     width: 100%;
     z-index: 1000;
 
-    .navbar-nav{
+    .navbar-nav {
         display: flex !important;
         align-items: center !important;
     }
 
+
     .nav-link {
         width: 10rem;
-        margin: 0 2rem;
+        margin: 0 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -47,11 +49,53 @@
 
     }
 
+    .navbar-toggler {
+        margin-right: 2rem;
+        height: 2.5rem;
+        width: 3rem;
+    }
+
+    .dropdown-menu {
+        background: rgba(0, 1, 45, 0.70);
+
+        .dropdown-item {
+            border-bottom: 1px solid white;
+        }
+
+        a {
+            color: white;
+        }
+
+    }
+
     .contact {
         border-radius: 23.187px 4.637px;
         background: #FFCF00;
         width: 184.496px;
         height: 35.557px;
         color: #00012D;
+        font-family: roboto-bold;
     }
+}
+
+@media (max-width: 1000px) {
+
+    .navbar-nav {
+        background: rgba(0, 1, 45, 0.094);
+
+        .nav-link {
+            font-size: 1.8rem !important;
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        img {
+            width: 22rem;
+        }
+    }
+
 }

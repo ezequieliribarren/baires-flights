@@ -1,33 +1,36 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const Contacto = () => {
+    const { t } = useTranslation();
+
   return (
     <section id='contacto' className='p-5'>
-    <h2 className='text-center margin-title'>Contactanos</h2>
+    <h2 className='text-center margin-title'>{t("CONTACTANOS")}</h2>
     <div className='container-fluid '>
         <div className="row">
             <div className='col-lg-6 contenedor-formulario'>
                 <form id="contactForm">
                     <div className="form-group">
-                        <label htmlFor="Nombre">Nombre</label>
-                        <input type="text" id="nombre" name='user_name' required placeholder='Tu nombre' />
+                        <label htmlFor="Nombre">{t("F-NOMBRE")}</label>
+                        <input type="text" id="nombre" name='user_name' required placeholder={t("F-P-NOMBRE")} />
                     </div>
                     <div className="form-group email-celular">
                         <div>
-                            <label htmlFor="Email">Email</label>
-                            <input type="email" id="email" name='user_email' required placeholder='ejemplo@gmail.com' />
+                            <label htmlFor="Email">{t("F-EMAIL")}</label>
+                            <input type="email" id="email" name='user_email' required placeholder={t("F-P-EMAIL")} />
                         </div>
                         <div>
-                            <label htmlFor="Celular">Celular</label>
-                            <input type="tel" id="tel" name="user_tel" required placeholder='11-0000-0000' />
+                            <label htmlFor="Celular">{t("F-CELULAR")}</label>
+                            <input type="tel" id="tel" name="user_tel" required placeholder={t("F-P-CELULAR")} />
                         </div>
 
                     </div>
                     <div className="form-group">
-                        <label htmlFor="Dejanos tu mensaje">Dejanos tu mensaje</label>
-                        <textarea id="mensaje" name="mensaje" required placeholder='Por favor escribí aquí tu mensaje'></textarea>
+                        <label htmlFor="Dejanos tu mensaje">{t("F-MENSAJE")}</label>
+                        <textarea id="mensaje" name="mensaje" required placeholder={t("F-P-MENSAJE")}></textarea>
                     </div>
-                    <button className='button-2' type="submit" value="Enviar">ENVIAR</button>
+                    <button className='button-2' type="submit" value="Enviar">{t("ENVIAR")}</button>
                 </form>
             </div>
             <div className='col-lg-6 redes-contacto'>

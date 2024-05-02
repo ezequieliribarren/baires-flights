@@ -28,9 +28,7 @@ const CallActionServices = ({ changeLanguage, selectedLanguage, none, inherit, c
         const element = document.getElementById('typed');
 
         const currentServiceKey = serviceKeys[index];
-        const currentService = services.SERVICIOS_DETALLE[currentServiceKey];
-
-        // Verificar si la cadena actual no está vacía o indefinida
+        const currentService = services.SERVICIOS_DETALLE[currentServiceKey]?.title; 
         if (currentService) {
             // Opciones para configurar Typed.js
             const options = {
@@ -52,23 +50,20 @@ const CallActionServices = ({ changeLanguage, selectedLanguage, none, inherit, c
 
     return (
         <> 
-        <div style={{ position: 'absolute', bottom: '10px', left: '10px' }}>
-            <div className={none}>
-                <h1>
-                    <span id="typed"></span>
-                </h1>
-                <h2>
-                    {t("EXPERIENCIA")}
-                </h2>
-            </div>
-        </div>  
-        <div className={end}>
+            <div style={{ position: 'absolute', bottom: '10px', left: '10px' }}>
+                <div className={none}>
+                    <h1>
+                        <span id="typed"></span>
+                    </h1>
+                    <h2>
+                        {t("EXPERIENCIA")}
+                    </h2>
+                </div>
+            </div>  
+            <div className={end}>
                 <h1 className={inherit}>{contentH1}</h1> 
             </div>
         </>
-
-
-
     );
 }
 

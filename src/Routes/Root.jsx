@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Layout from '../Layout/Layout';
@@ -7,6 +7,7 @@ import VuelosAMedida from '../Components/VuelosAMedida/VuelosAMedida';
 import Experiencias from '../Components/Experiencias/Experiencias';
 import Nosotros from '../Components/Nosotros/Nosotros';
 import Contacto from '../Components/Contacto/Contacto';
+import Whatsapp from '../Components/Whatsapp/Whatsapp';
 
 const Root = () => {
     const { i18n } = useTranslation();
@@ -17,15 +18,21 @@ const Root = () => {
         setSelectedLanguage(lang); // Actualizar el estado del idioma seleccionado
     };
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []); 
+    
+
     return (
-        <Layout changeLanguage={changeLanguage} selectedLanguage={selectedLanguage}  height={"high"} imgUrl={"images/header1.png"}>
+        <Layout changeLanguage={changeLanguage} selectedLanguage={selectedLanguage} height={"high"} imgUrl={"images/header1.png"}>
             <main>
-                    <VuelosAMedida />
-                    <Experiencias/>
-                    <Nosotros/>
-                    <Contacto/>
+                <VuelosAMedida />
+                <Experiencias />
+                <Nosotros />
+                <Contacto />
+                <Whatsapp/>
             </main>
-        
+
         </Layout>
 
 

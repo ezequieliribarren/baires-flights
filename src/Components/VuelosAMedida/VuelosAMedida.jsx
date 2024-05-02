@@ -23,14 +23,14 @@ const VuelosAMedida = () => {
                     <h5>{t("FORM-SOLO-IDA")}</h5><button className={`button-select ${soloIdaSeleccionado ? 'selected' : ''}`} onClick={() => handleSeleccion(true)}></button>
                 </div>
                 <form className='form-a-medida row' action="">
-                    <div className="form-group col-sm-2">
+                    <div className="form-group col-lg-2">
                         <div>
                             <img src="images/origen.png" alt="Origen" />
                             <label>{t("FORM-ORIGEN")}</label>
                         </div>
                         <input type="text" />
                     </div>
-                    <div className="form-group col-sm-2">
+                    <div className="form-group col-lg-2">
                         <div>
                             <img src="images/destino.png" alt="Destino" />
                             <label>{t("FORM-DESTINO")}</label>
@@ -38,15 +38,15 @@ const VuelosAMedida = () => {
 
                         <input type="text" />
                     </div>
-                    <div className="form-group col-sm-2">
+                    <div className="form-group col-lg-2">
                         <label>{t("FORM-PARTIDA")}</label>
                         <input type="date" />
                     </div>
-                    <div className={`form-group col-sm-2 ${soloIdaSeleccionado ? 'none' : ''}`}>
+                    <div className={`form-group col-lg-2 ${soloIdaSeleccionado ? 'none' : ''}`}>
                         <label>{t("FORM-REGRESO")}</label>
                         <input type="date" />
                     </div>
-                    <div className="form-group col-sm-1">
+                    <div className="form-group col-lg-1">
                         <label>{t("FORM-PASAJEROS")}</label>
                         <div className='pasajeros'>
                             <img src="images/pasajeros.png" alt="Pasajeros" />
@@ -54,7 +54,7 @@ const VuelosAMedida = () => {
                         </div>
                         
                     </div>
-                    <div className='col-sm-2 siguiente-a-medida'>
+                    <div className='col-lg-2 siguiente-a-medida'>
                     <button type="button" onClick={toggleFormularios}>{t("SIGUIENTE")}</button>
                     </div>
                 </form>
@@ -65,14 +65,14 @@ const VuelosAMedida = () => {
                 <button className='volver-a-medida' onClick={toggleFormularios}>{t("VOLVER")}</button>
                 </div>
                 <form className='form-a-medida row' action="">
-                    <div className="form-group col-sm-3">
+                    <div className="form-group col-lg-3">
                         <div>
                             <img src="images/pasajeros.png" alt="Nombre" />
                             <label>{t("FORM-NOMBRE")}</label>
                         </div>
                         <input type="text" />
                     </div>
-                    <div className="form-group col-sm-3">
+                    <div className="form-group col-lg-3">
                         <div>
                             <img src="images/pasajeros.png" alt="Apellido" />
                             <label>{t("FORM-APELLIDO")}</label>
@@ -80,21 +80,21 @@ const VuelosAMedida = () => {
 
                         <input type="text" />
                     </div>
-                    <div className="form-group col-sm-2">
+                    <div className="form-group col-lg-2">
                     <div>
                             <img src="images/email.png" alt="Email" />
                             <label>{t("FORM-EMAIL")}</label>
                         </div>
                         <input type="mail" />
                     </div>
-                    <div className="form-group col-sm-2">
+                    <div className="form-group col-lg-2">
                     <div>
                             <img src="images/email.png" alt="Teléfono" />
                             <label>{t("FORM-TEL")}</label>
                         </div>
                         <input type="tel" />
                     </div> 
-                    <div className='col-sm-2 siguiente-a-medida'>
+                    <div className='col-lg-2 siguiente-a-medida'>
                     <button type="button" className='cotizar-a-medida'>{t("COTIZAR")}</button>
                     </div>
                 </form>

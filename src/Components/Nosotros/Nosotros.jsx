@@ -9,32 +9,26 @@ const Nosotros = () => {
     const { t } = useTranslation();
 
     const settings = {
-        centerMode: true,
+        centerMode: false,
         centerPadding: '0px',
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         speed: 500,
         autoplay: true,
         autoplaySpeed: 3000,
         infinite: true,
-        dots: true,
+        dots: false,
         arrows: false,
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
-                    arrows: false,
-                    centerMode: false,
-                    centerPadding: '40px',
-                    slidesToShow: 1
+                    slidesToShow: 2
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
                     slidesToShow: 1
                 }
             }
@@ -43,16 +37,16 @@ const Nosotros = () => {
 
     return (
         <section id='nosotros'>
-            <h2 className='text-center margin-title'>Conócenos</h2>
+            <h2 className='text-center margin-title'>{t("CONOCENOS")}</h2>
             <div className="container contenedor-nosotros">
                 <div className="row description nosotros">
                     <div className="col-md-5 img-nosotros">
                         <img src="images/nosotros/logo-nosotros.png" alt="Baires Flights" />
                     </div>
                     <div className="col-md-7">
-                        <h3 className='margin-title'>Nosotros</h3>
-                        <p className='margin-title'> <strong>En Baires Flights, nos dedicamos a hacer realidad el deseo y la pasión de volar los cielos.</strong></p>
-                        <p>Con una amplia trayectoria y una actualización constante, ofrecemos un servicio de altísima calidad que conecta personas y destinos para unir sueños e historias, creando recuerdos y experiencias únicas. Contamos con una amplia flota que brinda la posibilidad incluso a aquellas personas que buscan convertirse en Pilotos de cumplir su sueño.</p>
+                        <h3 className='margin-title'>{t("NOSOTROS")}</h3>
+                        <p className='margin-title'> <strong>{t("P-NOS-1")}</strong></p>
+                        <p>{t("P-NOS-2")}</p>
                     </div>
                 </div>
                 <div className="row">

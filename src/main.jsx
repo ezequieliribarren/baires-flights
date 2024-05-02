@@ -9,47 +9,63 @@ import es from './i18n/es.json'
 import Root from './Routes/Root';
 import Experiencias from './Routes/Experiencias';
 import ServicioDetail from './Components/ServicioDetail/ServicioDetail';
+import ContactoRoute from './Routes/ContactoRoute';
+import Shop from './Components/Shop/Shop';
 
 i18next.use(initReactI18next)
-.init({
+  .init({
     lng: 'es',
-    interpolation:{
+    interpolation: {
       escapeValue: false
     },
-    resources:{
-      en:{
-       translation: en,
-      } ,
-      
-      es:{
+    resources: {
+      en: {
+        translation: en,
+      },
+
+      es: {
         translation: es,
-       } 
+      }
     }
-}
+  }
 
 
-)
+  )
 
 const router = createHashRouter([
 
-  
+
   {
     path: "/",
     element: (
-          <Root />
+      <Root />
     ),
   },
   {
     path: "/experiencias",
     element: (
-          <Experiencias />
+      <Experiencias />
+    ),
+  },
+
+  {
+    path: "/contacto",
+    element: (
+      <ContactoRoute />
     ),
   },
 
   {
     path: "/experiencias/:title",
     element: (
-          <ServicioDetail />
+      <ServicioDetail />
+    ),
+  },
+
+  {
+    path: "/shop",
+    element: (
+      <Shop />
     ),
   },
 

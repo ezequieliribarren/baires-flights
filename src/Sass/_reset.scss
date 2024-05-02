@@ -65,6 +65,12 @@ html {
 
     h5 {
         font-family: roboto;
+        font-size: 1.8rem;
+        color: white;
+    }
+
+    h6 {
+        font-family: roboto;
         font-size: 1.3rem;
         color: white;
     }
@@ -129,6 +135,7 @@ html {
 .end {
     position: absolute;
     bottom: 50% !important;
+    padding-left: 2rem !important;
 
     h1 {
         color: var(--azul-profundo, #00012D);
@@ -136,6 +143,157 @@ html {
     }
 }
 
+.shop {
+    height: 100vh;
+}
+
+.contenedor-shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    h1,
+    h2 {
+        font-size: 6rem;
+    }
+
+    h3,
+    span {
+        font-size: 2rem;
+        font-family: roboto-regular;
+        margin-top: 2rem;
+    }
+}
 
 
-// FUENTES
+.whatsFlot {
+    position: fixed;
+    top: 75%;
+    left: 85%;
+    color: white;
+    text-decoration: none;
+    z-index: 100;
+
+  }
+  
+  
+
+@media (max-width: 768px) {
+    html {
+        h1 {
+            font-size: 5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2.2rem;
+        }
+
+        h4 {
+            font-size: 1.8rem !important;
+        }
+
+        h5 {
+            font-size: 1.4rem !important;
+        }
+
+        h6 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+        }
+
+        a {
+            font-size: 1.5rem !important;
+        }
+    }
+    .contenedor-shop {
+        h1,
+        h2 {
+            font-size: 4rem;
+        }
+    
+        h3,
+        span {
+            font-size: 1.8rem;
+            font-family: roboto-regular;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    html {
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+
+        a {
+            font-size: 1.4rem !important;
+        }
+    }
+
+}
+
+@media (max-width: 375px) {
+    html {
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.9rem;
+        }
+
+        h4 {
+            font-size: 1.7rem !important;
+        }
+
+        h5 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+
+        a {
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .contenedor-shop {
+        h1,
+        h2 {
+            font-size: 3rem;
+        }
+    
+        h3,
+        span {
+            font-size: 1.6rem;
+            font-family: roboto-regular;
+            margin-top: 2rem;
+        }
+    }
+
+}

@@ -16,30 +16,85 @@ footer {
     }
 
     .redes-logo-footer {
-        display: flex;
-        justify-content: start;
-        align-items: center;
+        display: flex ;
+        justify-content: center ;
+        align-items: center ;
         padding-left: 4rem;
     }
 
     .redes-footer {
         display: flex;
         flex-direction: column;
-        margin-left: 4rem;
+        justify-content: center;
 
         a {
             font-family: roboto;
             font-size: 1.8rem;
             color: var(--Amarillo, #FFCF00);
             margin: 1rem 0;
+            display: flex;
 
-            img{
+            img {
                 margin-right: 1rem;
+               
+                    width: 2rem;
+                    height: 2rem;
+                
             }
+
 
 
         }
 
     }
 
+    h5 {
+        margin: 0.8rem 0 !important;
+    }
+
+    .first-h5 {
+        margin-top: 1.8rem !important;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .redes-logo-footer {
+        margin: 0;
+        margin-bottom: 4rem;
+
+        .col-sm-6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    .links-footer {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .redes-footer{
+        a{
+          text-align: center !important;    
+        }
+      
+    }
+
+}
+
+@media (max-width: 768px){
+    .links-footer {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        h4,h5{
+            text-align: center !important;
+        }
+    }
 }

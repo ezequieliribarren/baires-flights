@@ -99,5 +99,20 @@
     height: 0;
     transform: translateX(-100%) !important;
     opacity: 0;
-    /* Establecer opacidad a 0 cuando está oculto */
+}
+
+@media (max-width: 768px) {
+    .form-a-medida{
+        input{
+            margin: 1rem 0;
+        }
+        img{
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+.siguiente-a-medida, .contenedor-a-medida{
+    margin-top: 2rem !important;
+}
+
 }
