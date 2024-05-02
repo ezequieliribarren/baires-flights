@@ -185,6 +185,49 @@ html {
   }
   
   
+// PRELOADER
+
+.preloader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .preloader {
+    border: 10px solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite, pulse 1s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 16rem;
+    }
+  }
+  
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     html {
