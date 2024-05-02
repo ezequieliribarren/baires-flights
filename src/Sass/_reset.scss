@@ -178,6 +178,10 @@ html {
     text-decoration: none;
     z-index: 100;
 
+    img{
+        width: 7rem;
+    }
+
   }
   
   
@@ -246,6 +250,13 @@ html {
 
         a {
             font-size: 1.4rem !important;
+        }
+    }
+
+    .whatsFlot{
+        left: 75%;
+        img{
+            width: 6rem;
         }
     }
 

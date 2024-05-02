@@ -37,11 +37,13 @@
         text-align: center;
         height: 12rem;
         border-right: 1px solid white;
-        img{
+
+        img {
             width: 2rem;
             height: 2rem;
             margin-right: 0.5rem;
         }
+
         h5 {
             margin: 1rem 0;
             font-family: roboto-bold;
@@ -127,7 +129,7 @@
     }
 }
 
-.call-action-servicio{
+.call-action-servicio {
     margin-top: 4rem !important;
     padding: 0 !important;
     display: flex !important;
@@ -143,17 +145,20 @@
     margin: 0 1rem;
     padding: 1rem 0;
     width: 54rem !important;
-    p{
-font-size: 1.7rem;
+
+    p {
+        font-size: 1.7rem;
     }
-img{
-    width: 9rem;
-}
+
+    img {
+        width: 9rem;
+    }
+
     div {
         margin: 0 0.5rem;
     }
 
-    button{
+    button {
         width: 12.5rem;
     }
 
@@ -210,34 +215,36 @@ img{
 }
 
 @media (max-width: 1170px) {
-.div-regalar-vivir{
-    margin: 1.5rem 0 !important;
+    .div-regalar-vivir {
+        margin: 1.5rem 0 !important;
+    }
 }
-}
+
 @media (max-width: 1000px) {
 
 
     .contenedor-descripcion-servicio {
-         .caja-servicio:last-child {
-                h4 {
-                    font-size: 1.8rem !important;
-                }
+        .caja-servicio:last-child {
+            h4 {
+                font-size: 1.8rem !important;
+            }
 
-            } 
-            
-            .caja-servicio {
-                padding-top: 1rem;
-                align-items: center !important;
-                height: 11rem;
-                border-bottom: 1px solid white;
+        }
+
+        .caja-servicio {
+            padding-top: 1rem;
+            align-items: center !important;
+            height: 11rem;
+            border-bottom: 1px solid white;
+
             h4 {
                 font-size: 3rem !important;
             }
 
-            h5{
+            h5 {
                 font-size: 1.6rem;
             }
-        
+
         }
     }
 
@@ -247,24 +254,26 @@ img{
 
 @media (max-width: 768px) {
 
-    .contenedor-preguntas-frecuentes{
+    .contenedor-preguntas-frecuentes {
         width: 100% !important;
 
-        .question{
+        .question {
             width: 100% !important;
         }
     }
 }
 
 @media (max-width: 550px) {
-    .div-regalar-vivir{
+    .div-regalar-vivir {
         width: 40rem !important;
         flex-direction: column !important;
         text-align: center;
-        p{
+
+        p {
             font-size: 1.5rem;
         }
-        div{
+
+        div {
             margin: 0.5rem 0;
         }
     }

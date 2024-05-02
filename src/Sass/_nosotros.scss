@@ -20,6 +20,7 @@
 
 .slider-nosotros{
     margin-top: 6rem;
+
 }
 
 }
@@ -28,6 +29,20 @@
     .img-nosotros{
         img{
             width: 18rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-nosotros{
+        display: flex !important;
+        justify-content: center !important;
+        div{
+            margin: 0 !important;
+            width: 18rem;
+        }
+        img{
+            width: 100%;
         }
     }
 }
