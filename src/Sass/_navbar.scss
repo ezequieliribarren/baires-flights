@@ -23,6 +23,10 @@
         color: white;
     }
 
+    .nav-link:hover{
+        color: #FFCF00;
+    }
+
     .esp-en {
         display: flex;
         align-items: center;
@@ -60,6 +64,10 @@
 
         .dropdown-item {
             border-bottom: 1px solid white;
+        }
+
+        .dropdown-item:hover {
+            color: black !important;
         }
 
         a {

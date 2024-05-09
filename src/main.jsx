@@ -10,7 +10,9 @@ import Root from './Routes/Root';
 import Experiencias from './Routes/Experiencias';
 import ServicioDetail from './Components/ServicioDetail/ServicioDetail';
 import ContactoRoute from './Routes/ContactoRoute';
-import Shop from './Components/Shop/Shop';
+import Shop from './Routes/Shop';
+import MensajeEnviado from './Components/MensajeEnviado/MensajeEnviado'
+import MensajeError from './Components/ErrorMail/ErrorMail'
 
 i18next.use(initReactI18next)
   .init({
@@ -67,6 +69,15 @@ const router = createHashRouter([
     element: (
       <Shop />
     ),
+  },
+
+  {
+    path: "/enviado",
+    element: <MensajeEnviado />
+  },
+  {
+    path: "/error",
+    element: <MensajeError/>
   },
 
 ]);

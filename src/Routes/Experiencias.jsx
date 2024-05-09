@@ -18,7 +18,7 @@ const Experiencias = () => {
 
 
   return (
-    <Layout end={"end"} contentH1={"Nuestras Experiencias"} changeLanguage={changeLanguage} selectedLanguage={selectedLanguage} inherit={"inherit"} none={"none"} height={"middle"} imgUrl={"images/header2.png"}>
+    <Layout end={"end"} contentH1={"Nuestras Experiencias"} changeLanguage={changeLanguage} selectedLanguage={selectedLanguage} inherit={"inherit"} none={"none"} height={"middle"} imgUrl={"images/header2.png"} noneTraductor="none">
       <CardServices />
     </Layout>
   )

@@ -6,9 +6,7 @@ import Contacto from '../Contacto/Contacto';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-
-
+import { ClipLoader } from 'react-spinners';
 
 
 
@@ -26,14 +24,15 @@ const ServicioDetail = () => {
                 top: 0,
                 behavior: 'smooth'
             });
-        }, 1000); 
+        }, 1000);
 
         return () => clearTimeout(timeout);
-    }, []); 
-    
+    }, []);
+
     const servicios = [
         {
             "title": t('SERVICIOS_DETALLE.S1.title'),
+            "titleEn": "Baptism flights",
             "imgHeader": t('SERVICIOS_DETALLE.S1.imgHeader'),
             "duracion": t('SERVICIOS_DETALLE.S1.duracion'),
             "capacidad": t('SERVICIOS_DETALLE.S1.capacidad'),
@@ -132,6 +131,7 @@ const ServicioDetail = () => {
         },
         {
             "title": t('SERVICIOS_DETALLE.S2.title'),
+            "titleEn": "Romantic flight",
             "imgHeader": t('SERVICIOS_DETALLE.S2.imgHeader'),
             "duracion": t('SERVICIOS_DETALLE.S2.duracion'),
             "capacidad": t('SERVICIOS_DETALLE.S2.capacidad'),
@@ -227,6 +227,7 @@ const ServicioDetail = () => {
         },
         {
             "title": t('SERVICIOS_DETALLE.S3.title'),
+            "titleEn": "Pilot for a day",
             "imgHeader": t('SERVICIOS_DETALLE.S3.imgHeader'),
             "duracion": t('SERVICIOS_DETALLE.S3.duracion'),
             "capacidad": t('SERVICIOS_DETALLE.S3.capacidad'),
@@ -322,6 +323,7 @@ const ServicioDetail = () => {
         },
         {
             "title": t('SERVICIOS_DETALLE.S4.title'),
+            "titleEn": "Air transfers",
             "imgHeader": t('SERVICIOS_DETALLE.S4.imgHeader'),
             "duracion": t('SERVICIOS_DETALLE.S4.duracion'),
             "capacidad": t('SERVICIOS_DETALLE.S4.capacidad'),
@@ -417,6 +419,7 @@ const ServicioDetail = () => {
         },
         {
             "title": t('SERVICIOS_DETALLE.S5.title'),
+            "titleEn": "Helicopter flights",
             "imgHeader": t('SERVICIOS_DETALLE.S5.imgHeader'),
             "duracion": t('SERVICIOS_DETALLE.S5.duracion'),
             "capacidad": t('SERVICIOS_DETALLE.S5.capacidad'),
@@ -509,6 +512,7 @@ const ServicioDetail = () => {
         },
         {
             "title": t('SERVICIOS_DETALLE.S6.title'),
+            "titleEn": "Skydiving",
             "imgHeader": t('SERVICIOS_DETALLE.S6.imgHeader'),
             "duracion": t('SERVICIOS_DETALLE.S6.duracion'),
             "capacidad": t('SERVICIOS_DETALLE.S6.capacidad'),
@@ -601,6 +605,7 @@ const ServicioDetail = () => {
         },
         {
             "title": t('SERVICIOS_DETALLE.S7.title'),
+            "titleEn": "Day tour to Martín García island",
             "imgHeader": t('SERVICIOS_DETALLE.S7.imgHeader'),
             "duracion": t('SERVICIOS_DETALLE.S7.duracion'),
             "capacidad": t('SERVICIOS_DETALLE.S7.capacidad'),
@@ -694,6 +699,7 @@ const ServicioDetail = () => {
         },
         {
             "title": t('SERVICIOS_DETALLE.S8.title'),
+            "titleEn": "West sector circuit",
             "imgHeader": t('SERVICIOS_DETALLE.S8.imgHeader'),
             "duracion": t('SERVICIOS_DETALLE.S8.duracion'),
             "capacidad": t('SERVICIOS_DETALLE.S8.capacidad'),
@@ -787,6 +793,7 @@ const ServicioDetail = () => {
         },
         {
             "title": t('SERVICIOS_DETALLE.S9.title'),
+            "titleEn": "North sector circuit",
             "imgHeader": t('SERVICIOS_DETALLE.S9.imgHeader'),
             "duracion": t('SERVICIOS_DETALLE.S9.duracion'),
             "capacidad": t('SERVICIOS_DETALLE.S9.capacidad'),
@@ -881,6 +888,7 @@ const ServicioDetail = () => {
         },
         {
             "title": t('SERVICIOS_DETALLE.S10.title'),
+            "titleEn": "International destinations",
             "imgHeader": t('SERVICIOS_DETALLE.S10.imgHeader'),
             "duracion": t('SERVICIOS_DETALLE.S10.duracion'),
             "capacidad": t('SERVICIOS_DETALLE.S10.capacidad'),
@@ -977,6 +985,8 @@ const ServicioDetail = () => {
     ]
 
 
+
+
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
         setSelectedLanguage(lang); // Actualizar el estado del idioma seleccionado
@@ -987,13 +997,15 @@ const ServicioDetail = () => {
 
     useEffect(() => {
         // Convertir el título de la URL a minúsculas y quitar los guiones
-        const formattedTitle = title.toLowerCase().replace(/-/g, " ");
-
-        // Buscar el servicio correspondiente por su título
-        const servicioEncontrado = servicios.find(servicio => servicio.title.toLowerCase() === formattedTitle);
+        const formattedTitle = title ? title.toLowerCase().replace(/-/g, "") : "";
+    
+        // Buscar el servicio correspondiente por su título (tanto en español como en inglés)
+        const servicioEncontrado = servicios.find(servicio => 
+            servicio.title.toLowerCase() === formattedTitle || (servicio.titleEn && servicio.titleEn.toLowerCase() === formattedTitle)
+        );
         setServicio(servicioEncontrado);
-
     }, [title]);
+    
 
     // Función para alternar la visibilidad de la respuesta
     const toggleAnswer = (index) => {
@@ -1034,7 +1046,7 @@ const ServicioDetail = () => {
     };
 
     if (!servicio) {
-        return <div>Cargando...</div>; // O mostrar un mensaje de error si no se encuentra el servicio
+        return <div>Cargando... <ClipLoader color={"#ffffff"} loading={true} /></div>;
     }
 
 
@@ -1050,40 +1062,42 @@ const ServicioDetail = () => {
             none={"none"}
             height={"middle"}
             imgUrl={servicio.imgHeader} // Usar la imagen del encabezado del servicio
+            noneTraductor="none"
         >
             <div className="container-fluid p-5">
-                <div className='row contenedor-descripcion-servicio'>
-                    <div className="col-lg-3 caja-servicio">
-                        <h5><img src="images/servicios/reloj.png" alt="" />Duración</h5>
-                        <h4>{servicio.duracion}</h4>
-                    </div>
-                    <div className="col-lg-3 caja-servicio">
-                        <h5><img src="images/servicios/person.png" alt="" />Capacidad Máxima</h5>
-                        <h4>{servicio.capacidad}</h4>
-                    </div>
-                    <div className="col-lg-3 caja-servicio">
-                        <h5><img src="images/servicios/map.png" alt="" />Partida</h5>
-                        <h4>{servicio.partida}</h4>
-                    </div>
-                    <div className="col-lg-3 caja-servicio">
-                        <h5><img src="images/servicios/recorrido.png" alt="" />Recorrido</h5>
-                        <h4>{servicio.recorrido}</h4>
-                    </div>
-                </div>
+            {title !== "Paracaidismo" && title !== "Skydiving" && (
+    <div className='row contenedor-descripcion-servicio'>
+        <div className="col-lg-3 caja-servicio">
+            <h5><img src="images/servicios/reloj.png" alt="" />Duración</h5>
+            <h4>{servicio.duracion}</h4>
+        </div>
+        <div className="col-lg-3 caja-servicio">
+            <h5><img src="images/servicios/person.png" alt="" />Capacidad Máxima</h5>
+            <h4>{servicio.capacidad}</h4>
+        </div>
+        <div className="col-lg-3 caja-servicio">
+            <h5><img src="images/servicios/map.png" alt="" />Partida</h5>
+            <h4>{servicio.partida}</h4>
+        </div>
+        <div className="col-lg-3 caja-servicio">
+            <h5><img src="images/servicios/recorrido.png" alt="" />Recorrido</h5>
+            <h4>{servicio.recorrido}</h4>
+        </div>
+    </div>
+)}
                 <div className="row mapa-description-servicio">
-                    <div className="col-lg-6 imgMapa" style={{ height: title === "Piloto por un día" ? "70rem" : "auto" }}>
-                        {title === "Piloto por un día" ? (
-                            <>
-                                <img src={servicio.imgMapa} alt="Mapa de Recorrido" style={{ height: "33%", width: "90%" }} />
-                                <img src={servicio.imgMapa2} alt="Mapa de Recorrido" style={{ height: "33%", width: "90%" }} />
-                                <img src={servicio.imgMapa3} alt="Mapa de Recorrido" style={{ height: "33%", width: "90%" }} />
-                            </>
-                        ) : (
-                            <>
-                                <img src={servicio.imgMapa} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
-                            </>
-                        )}
-                    </div>
+                <div className="col-lg-6 imgMapa" >
+    {(title === "Piloto por un día" || title === "Pilot for a Day") && (
+        <Slider dots={true} infinite={true} speed={500} slidesToShow={1} slidesToScroll={1}>
+            <img src={servicio.imgMapa} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
+            <img src={servicio.imgMapa2} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
+            <img src={servicio.imgMapa3} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
+        </Slider>
+    )}
+    {title !== "Piloto por un día" && title !== "Pilot for a Day" && (
+        <img src={servicio.imgMapa} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
+    )}
+</div>
                     <div className="col-lg-6 experiencia-servicio">
                         <div>
                             <h3>{t("LA-EXPERIENCIA")}</h3>

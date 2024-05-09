@@ -480,7 +480,7 @@
         },
         "S6":  {
             "title": "Paracaidismo",
-            "imgHeader": "",
+            "imgHeader": "images/header2.png",
             "duracion": "",
             "capacidad": "",
             "partida": "",
@@ -764,7 +764,7 @@
             "recorrido": "Morón, General Rodriguez, Pilar, Belén de Escobar, Campana, Zárate, Los Cardales.",
             "imgMapa": "images/servicios/circuito-norte/mapa1.png",
             "p1": "Descubre la belleza del norte bonaerense con nuestra emocionante experiencia de vuelo por el Circuito Norte.",
-            "p2": " Durante aproximadamente 90 minutos, disfrutarás del sobrevuelo de Pilar, Escobar, el fascinante Ojo del Delta, el tranquilo Zárate Brazo Largo, la imponente Basílica de Luján y la encantadora ciudad de Ituzaingó.",
+            "p2": " Durante aproximadamente 90 minutos, disfrutarás del sobrevuelo de Pilar, Escobar, el fascinante Ojo del Delta, el tranquilo Zárate Brazo Largo y la encantadora ciudad de Ituzaingó.",
             "p3": "¡Una experiencia inolvidable que te permitirá apreciar los paisajes más destacados de la región desde las alturas!",
             "link": "Enlace relacionado al servicio 1",
             "imgSlider": [
