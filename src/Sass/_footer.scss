@@ -2,6 +2,7 @@ footer {
     background: var(--azul-claro, #333457);
     padding-top: 3rem;
     border-top: 1px solid #EEB880;
+    overflow: hidden;
 
     .line {
         width: 85%;
@@ -10,6 +11,7 @@ footer {
     }
 
     .links-footer {
+        width: 100%;
         h4 {
             margin-bottom: 1rem;
         }
@@ -95,6 +97,12 @@ footer {
 
         h4,h5{
             text-align: center !important;
+        }
+    }
+
+    .redes-logo-footer{
+        img{
+            width: 14rem;
         }
     }
 }
