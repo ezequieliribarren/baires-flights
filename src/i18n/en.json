@@ -5,28 +5,28 @@
     "SERVICIOS_DETALLE": {
         "S1": {
             "title": "Baptism flights",
-            "imgHeader": "images/header2.png",
+            "imgHeader": "/images/header2.png",
             "duracion": "60 min",
             "capacidad": "1 a 3 pax",
             "partida": "SADM Morón",
             "recorrido": "Castelar, Ituzaingó, Moreno, Marcos Paz, Merlo, Dique Cascallares.",
-            "imgMapa": "images/servicios/vuelo-bautismo/mapa1.png",
+            "imgMapa": "/images/servicios/vuelo-bautismo/mapa1.png",
             "p1": "A flight specially designed for those who have never experienced flying in an airplane and yearn to make it a reality.",
             "p2": "Consists of a local circuit over the city and Dique Cascallares.",
             "p3": "The flight lasts approximately one hour and is carried out in a PA28 WARRIOR II airplane with capacity for 1 pilot and 3 passengers, or in a more economical airplane like the Cessna 150/152, with capacity for 1 pilot and 1 passenger.",
             "link": "Link related to service 1",
             "imgSlider": [
-                "images/servicios/vuelo-bautismo/1.png",
-                "images/servicios/vuelo-bautismo/2.png",
-                "images/servicios/vuelo-bautismo/3.png",
-                "images/servicios/vuelo-bautismo/4.png",
-                "images/servicios/vuelo-bautismo/5.png",
-                "images/servicios/vuelo-bautismo/6.png",
-                "images/servicios/vuelo-bautismo/7.png",
-                "images/servicios/vuelo-bautismo/8.png",
-                "images/servicios/vuelo-bautismo/9.png",
-                "images/servicios/vuelo-bautismo/10.png",
-                "images/servicios/vuelo-bautismo/11.png"
+                "/images/servicios/vuelo-bautismo/1.png",
+                "/images/servicios/vuelo-bautismo/2.png",
+                "/images/servicios/vuelo-bautismo/3.png",
+                "/images/servicios/vuelo-bautismo/4.png",
+                "/images/servicios/vuelo-bautismo/5.png",
+                "/images/servicios/vuelo-bautismo/6.png",
+                "/images/servicios/vuelo-bautismo/7.png",
+                "/images/servicios/vuelo-bautismo/8.png",
+                "/images/servicios/vuelo-bautismo/9.png",
+                "/images/servicios/vuelo-bautismo/10.png",
+                "/images/servicios/vuelo-bautismo/11.png"
             ],
             "regalar": "Information on how to give service 1",
             "preguntasFrecuentes": {
@@ -57,11 +57,11 @@
                     },
                     {
                         "id": 7,
-                        "pregunta": "How long does the activity last?"
+                        "pregunta": "Can I cancel the reservation?"
                     },
                     {
                         "id": 8,
-                        "pregunta": "Can I cancel the reservation?"
+                        "pregunta": "What is the weight of the aircraft?"
                     }
                 ],
                 "respuestas": [
@@ -102,25 +102,25 @@
         },
         "S2": {
             "title": "Romantic Flight",
-            "imgHeader": "images/header2.png",
+            "imgHeader": "/images/header2.png",
             "duracion": "60 min",
             "capacidad": "1 a 3 pax",
             "partida": "SADM Morón",
             "recorrido": "Castelar, Ituzaingó, Moreno, Marcos Paz, Merlo, Dique Cascallares.",
-            "imgMapa": "images/servicios/vuelo-romantico/mapa1.png",
+            "imgMapa": "/images/servicios/vuelo-romantico/mapa1.png",
             "p1": "A exclusive flight designed to provide a unique moment, full of affection and romance, ideal for celebrating couple anniversaries or taking the big step 💍.",
             "p2": "We recommend doing this experience during the Golden Hour, to admire the last gleams of the sun in a reddish sunset and thus crown the romantic atmosphere.",
             "p3": "As a gift, the company will provide a Gift Box that includes an alcoholic beverage and glasses for you to enjoy together! In addition, digital photographic material will be provided to preserve these precious memories.",
             "link": "Link related to service 1",
             "imgSlider": [
-                "images/servicios/vuelo-romantico/1.png",
-                "images/servicios/vuelo-romantico/2.png",
-                "images/servicios/vuelo-romantico/3.png",
-                "images/servicios/vuelo-romantico/4.png",
-                "images/servicios/vuelo-romantico/5.png",
-                "images/servicios/vuelo-romantico/6.png",
-                "images/servicios/vuelo-romantico/7.png",
-                "images/servicios/vuelo-romantico/8.png"
+                "/images/servicios/vuelo-romantico/1.png",
+                "/images/servicios/vuelo-romantico/2.png",
+                "/images/servicios/vuelo-romantico/3.png",
+                "/images/servicios/vuelo-romantico/4.png",
+                "/images/servicios/vuelo-romantico/5.png",
+                "/images/servicios/vuelo-romantico/6.png",
+                "/images/servicios/vuelo-romantico/7.png",
+                "/images/servicios/vuelo-romantico/8.png"
             ],
             "regalar": "Information on how to give service 1",
             "preguntasFrecuentes": {
@@ -151,11 +151,11 @@
                     },
                     {
                         "id": 7,
-                        "pregunta": "How long does the activity last?"
+                        "pregunta": "Can I cancel the reservation?"
                     },
                     {
                         "id": 8,
-                        "pregunta": "Can I cancel the reservation?"
+                        "pregunta": "What is the weight of the aircraft?"
                     }
                 ],
                 "respuestas": [
@@ -196,25 +196,25 @@
         },
         "S3": {
             "title": "Pilot for a Day",
-            "imgHeader": "images/header2.png",
+            "imgHeader": "/images/header2.png",
             "duracion": "60-90 min",
             "capacidad": "1 to 3 pax",
             "partida": "SADM Morón",
             "recorrido": "According to chosen circuit",
-            "imgMapa": "images/servicios/piloto/mapa1.png",
-            "imgMapa2": "images/servicios/piloto/mapa2.png",
-            "imgMapa3": "images/servicios/piloto/mapa3.png",
+            "imgMapa": "/images/servicios/piloto/mapa1.png",
+            "imgMapa2": "/images/servicios/piloto/mapa2.png",
+            "imgMapa3": "/images/servicios/piloto/mapa3.png",
             "p1": "A personalized flight designed for those who aspire to become pilots and want to experience handling an aircraft.",
             "p2": "Designed to feel the control and power of each of our planes, in this flight, the sky is the limit and we let ourselves be carried away by the passion towards new horizons.",
             "p3": "In addition, you can choose between 3 different routes: the northern circuit, the western circuit, or a local route.",
             "link": "Link related to service 1",
             "imgSlider": [
-                "images/servicios/piloto/1.png",
-                "images/servicios/piloto/2.png",
-                "images/servicios/piloto/3.png",
-                "images/servicios/piloto/4.png",
-                "images/servicios/piloto/5.png",
-                "images/servicios/piloto/6.png"
+                "/images/servicios/piloto/1.png",
+                "/images/servicios/piloto/2.png",
+                "/images/servicios/piloto/3.png",
+                "/images/servicios/piloto/4.png",
+                "/images/servicios/piloto/5.png",
+                "/images/servicios/piloto/6.png"
             ],
             "regalar": "Information on how to give service 1",
             "preguntasFrecuentes": {
@@ -245,11 +245,11 @@
                     },
                     {
                         "id": 7,
-                        "pregunta": "How long does the activity last?"
+                        "pregunta": "Can I cancel the reservation?"
                     },
                     {
                         "id": 8,
-                        "pregunta": "Can I cancel the reservation?"
+                        "pregunta": "What is the weight of the aircraft?"
                     }
                 ],
                 "respuestas": [
@@ -290,25 +290,25 @@
         },
         "S4": {
             "title": "Air Transfers",
-            "imgHeader": "images/header2.png",
+            "imgHeader": "/images/header2.png",
             "duracion": "Estimated",
             "capacidad": "1 to 6 pax",
             "partida": "SADM-SADF-SADP",
             "recorrido": "Stipulated",
-            "imgMapa": "images/servicios/traslados/mapa1.png",
+            "imgMapa": "/images/servicios/traslados/mapa1.png",
             "p1": "We offer flights within the Argentine Republic to enjoy pleasure, conduct business, or access medical care (medical flights).",
             "p2": "You choose the destination, we take care of the rest!",
             "p3": "",
             "link": "Link related to service 1",
             "imgSlider": [
-                "images/servicios/traslados/1.png",
-                "images/servicios/traslados/2.png",
-                "images/servicios/traslados/3.png",
-                "images/servicios/traslados/4.png",
-                "images/servicios/traslados/5.png",
-                "images/servicios/traslados/7.png",
-                "images/servicios/traslados/8.png",
-                "images/servicios/traslados/6.png"
+                "/images/servicios/traslados/1.png",
+                "/images/servicios/traslados/2.png",
+                "/images/servicios/traslados/3.png",
+                "/images/servicios/traslados/4.png",
+                "/images/servicios/traslados/5.png",
+                "/images/servicios/traslados/7.png",
+                "/images/servicios/traslados/8.png",
+                "/images/servicios/traslados/6.png"
             ],
             "regalar": "Information on how to give service 1",
             "preguntasFrecuentes": {
@@ -339,11 +339,11 @@
                     },
                     {
                         "id": 7,
-                        "pregunta": "How long does the activity last?"
+                        "pregunta": "Can I cancel the reservation?"
                     },
                     {
                         "id": 8,
-                        "pregunta": "Can I cancel the reservation?"
+                        "pregunta": "What is the weight of the aircraft?"
                     }
                 ],
                 "respuestas": [
@@ -384,22 +384,22 @@
         },
         "S5": {
             "title": "Helicopter Flights",
-            "imgHeader": "images/header2.png",
+            "imgHeader": "/images/header2.png",
             "duracion": "18-40 min",
             "capacidad": "1 to 3 pax",
             "partida": "SADF - FDO",
             "recorrido": "According to chosen circuit.",
-            "imgMapa": "images/servicios/helicoptero/mapa1.png",
+            "imgMapa": "/images/servicios/helicoptero/mapa1.png",
             "p1": "The Helitour of Buenos Aires City starts 15 minutes before the agreed time at the San Fernando International Airport, located just 25 minutes by car from Buenos Aires City.",
             "p2": "But that's not all. The helicoptero flight continues to explore the docks of Puerto Madero, passing by the Casa Rosada, Plaza de Mayo, and Luna Park. Then, it flies over the Torre de los Ingleses, continues through Retiro, Avenida 9 de Julio (where the Obelisk can be seen), Recoleta Cemetery, Barrio Parque, Palermo, the Planetarium, the Rose Garden, and the lakes of Palermo.",
             "p3": "It also passes by the Hippodrome and finally crosses back to the riverbank near Aeroparque. It's a truly breathtaking journey!",
             "link": "Link related to service 1",
             "imgSlider": [
-                "images/servicios/helicoptero/1.png",
-                "images/servicios/helicoptero/2.png",
-                "images/servicios/helicoptero/3.png",
-                "images/servicios/helicoptero/4.png",
-                "images/servicios/helicoptero/5.png"
+                "/images/servicios/helicoptero/1.png",
+                "/images/servicios/helicoptero/2.png",
+                "/images/servicios/helicoptero/3.png",
+                "/images/servicios/helicoptero/4.png",
+                "/images/servicios/helicoptero/5.png"
             ],
             "regalar": "Information on how to give service 1",
             "preguntasFrecuentes": {
@@ -430,11 +430,11 @@
                     },
                     {
                         "id": 7,
-                        "pregunta": "How long does the activity last?"
+                        "pregunta": "Can I cancel the reservation?"
                     },
                     {
                         "id": 8,
-                        "pregunta": "Can I cancel the reservation?"
+                        "pregunta": "What is the weight of the aircraft?"
                     }
                 ],
                 "respuestas": [
@@ -475,22 +475,22 @@
         },
         "S6": {
             "title": "Skydiving",
-            "imgHeader": "images/header2.png",
+            "imgHeader": "/images/header2.png",
             "duracion": "",
             "capacidad": "",
             "partida": "",
             "recorrido": "",
-            "imgMapa": "images/servicios/skydiving/mapa1.png",
+            "imgMapa": "/images/servicios/skydiving/mapa1.png",
             "p1": "Embark on an adventure full of excitement and adrenaline with our incredible skydiving jumps in Chascomús or Lobos!",
             "p2": "You have the option to get to the location on your own or experience the thrill of flying there and then jumping from another plane.",
             "p3": "Feel the freedom and excitement in every jump with us!",
             "link": "Link related to service 1",
             "imgSlider": [
-                "images/servicios/paracaidismo/1.png",
-                "images/servicios/paracaidismo/2.png",
-                "images/servicios/paracaidismo/3.png",
-                "images/servicios/paracaidismo/4.png",
-                "images/servicios/paracaidismo/5.png"
+                "/images/servicios/paracaidismo/1.png",
+                "/images/servicios/paracaidismo/2.png",
+                "/images/servicios/paracaidismo/3.png",
+                "/images/servicios/paracaidismo/4.png",
+                "/images/servicios/paracaidismo/5.png"
             ],
             "regalar": "Information on how to give service 1",
             "preguntasFrecuentes": {
@@ -521,11 +521,11 @@
                     },
                     {
                         "id": 7,
-                        "pregunta": "How long does the activity last?"
+                        "pregunta": "Can I cancel the reservation?"
                     },
                     {
                         "id": 8,
-                        "pregunta": "Can I cancel the reservation?"
+                        "pregunta": "What is the weight of the aircraft?"
                     }
                 ],
                 "respuestas": [
@@ -566,22 +566,22 @@
         },
         "S7": {
             "title": "Day Tour to Martín García Island",
-            "imgHeader": "images/header2.png",
+            "imgHeader": "/images/header2.png",
             "duracion": "45 min (per flight)",
             "capacidad": "1 to 6 pax",
             "partida": "SADM Morón",
             "recorrido": "Morón, Palomar, San Fernando, Delta, Martín García Island.",
-            "imgMapa": "images/servicios/martin-garcia/mapa1.png",
+            "imgMapa": "/images/servicios/martin-garcia/mapa1.png",
             "p1": "Let yourself be carried away by a flight that will take you away from the chaos of the city to immerse yourself in one of the most fascinating tourist destinations!",
             "p2": "Martín García Island, located in the heart of the Río de la Plata between Argentina and Uruguay, is known for its rich political history and delicious artisanal cuisine. The experience begins at Morón Airport, from where we will fly directly to the island. There, we will be greeted by a tour guide who will take us to discover the highlights of the island, revealing both its well-known stories and the most hidden ones.",
             "p3": "Afterwards, we will enjoy a delicious lunch at Comedor Solís, where you can delight in their homemade recipes and relax under the sun in their charming garden. This service is all-inclusive! Ask about our Martín García - Conventional package to make the most of this unique experience.",
             "imgSlider": [
-                "images/servicios/martin-garcia/1.png",
-                "images/servicios/martin-garcia/2.png",
-                "images/servicios/martin-garcia/3.png",
-                "images/servicios/martin-garcia/4.png",
-                "images/servicios/martin-garcia/5.png",
-                "images/servicios/martin-garcia/6.png"
+                "/images/servicios/martin-garcia/1.png",
+                "/images/servicios/martin-garcia/2.png",
+                "/images/servicios/martin-garcia/3.png",
+                "/images/servicios/martin-garcia/4.png",
+                "/images/servicios/martin-garcia/5.png",
+                "/images/servicios/martin-garcia/6.png"
             ],
             "regalar": "Information on how to give service 1",
             "preguntasFrecuentes": {
@@ -612,11 +612,11 @@
                     },
                     {
                         "id": 7,
-                        "pregunta": "How long does the activity last?"
+                        "pregunta": "Can I cancel the reservation?"
                     },
                     {
                         "id": 8,
-                        "pregunta": "Can I cancel the reservation?"
+                        "pregunta": "What is the weight of the aircraft?"
                     }
                 ],
                 "respuestas": [
@@ -657,23 +657,23 @@
         },
         "S8": {
             "title": "West Sector Circuit",
-            "imgHeader": "images/header2.png",
+            "imgHeader": "/images/header2.png",
             "duracion": "70 min",
             "capacidad": "1 to 3 pax",
             "partida": "SADM Morón",
             "recorrido": "Morón, General Rodriguez, Luján, Mercedes, Tomas Jofre, Cascallares Dam.",
-            "imgMapa": "images/servicios/circuito-oeste/mapa1.png",
+            "imgMapa": "/images/servicios/circuito-oeste/mapa1.png",
             "p1": "Discover the beauty of the Buenos Aires west with our exciting flight over the West Circuit.",
             "p2": "For approximately 70 minutes, you will enjoy flying over Parque Leloir, the western access road, the majestic Naveira Castle, and the imposing Basilica of Luján. Additionally, you will have the opportunity to admire the serene landscape of the Cascallares Dam.",
             "p3": "An unforgettable experience that will connect you with the region's most outstanding places from a unique perspective in the sky!",
             "link": "Related link to service 1",
             "imgSlider": [
-                "images/servicios/circuito-oeste/1.png",
-                "images/servicios/circuito-oeste/2.png",
-                "images/servicios/circuito-oeste/3.png",
-                "images/servicios/circuito-oeste/4.png",
-                "images/servicios/circuito-oeste/5.png",
-                "images/servicios/circuito-oeste/6.png"
+                "/images/servicios/circuito-oeste/1.png",
+                "/images/servicios/circuito-oeste/2.png",
+                "/images/servicios/circuito-oeste/3.png",
+                "/images/servicios/circuito-oeste/4.png",
+                "/images/servicios/circuito-oeste/5.png",
+                "/images/servicios/circuito-oeste/6.png"
             ],
             "regalar": "Information on how to give service 1",
             "preguntasFrecuentes": {
@@ -704,11 +704,11 @@
                     },
                     {
                         "id": 7,
-                        "pregunta": "How long does the activity last?"
+                        "pregunta": "Can I cancel the reservation?"
                     },
                     {
                         "id": 8,
-                        "pregunta": "Can I cancel the reservation?"
+                        "pregunta": "What is the weight of the aircraft?"
                     }
                 ],
                 "respuestas": [
@@ -749,24 +749,24 @@
         },
         "S9": {
             "title": "North Sector Circuit",
-            "imgHeader": "images/header2.png",
+            "imgHeader": "/images/header2.png",
             "duracion": "70 min",
             "capacidad": "1 to 3 pax",
             "partida": "SADM Morón",
             "recorrido": "Morón, General Rodriguez, Pilar, Belén de Escobar, Campana, Zárate, Los Cardales.",
-            "imgMapa": "images/servicios/circuito-norte/mapa1.png",
+            "imgMapa": "/images/servicios/circuito-norte/mapa1.png",
             "p1": "Discover the beauty of northern Buenos Aires with our exciting flight experience over the North Circuit.",
             "p2": "For approximately 90 minutes, you will enjoy flying over Pilar, Escobar, the fascinating Delta Eye, the tranquil Zárate Brazo Largo and the charming city of Ituzaingó.",
             "p3": "An unforgettable experience that will allow you to appreciate the most outstanding landscapes of the region from the heights!",
             "link": "Related link to service 1",
             "imgSlider": [
-                "images/servicios/circuito-norte/1.png",
-                "images/servicios/circuito-norte/2.png",
-                "images/servicios/circuito-norte/3.png",
-                "images/servicios/circuito-norte/4.png",
-                "images/servicios/circuito-norte/5.png",
-                "images/servicios/circuito-norte/7.png",
-                "images/servicios/circuito-norte/6.png"
+                "/images/servicios/circuito-norte/1.png",
+                "/images/servicios/circuito-norte/2.png",
+                "/images/servicios/circuito-norte/3.png",
+                "/images/servicios/circuito-norte/4.png",
+                "/images/servicios/circuito-norte/5.png",
+                "/images/servicios/circuito-norte/7.png",
+                "/images/servicios/circuito-norte/6.png"
             ],
             "regalar": "Information on how to give service 1",
             "preguntasFrecuentes": {
@@ -797,11 +797,11 @@
                     },
                     {
                         "id": 7,
-                        "pregunta": "How long does the activity last?"
+                        "pregunta": "Can I cancel the reservation?"
                     },
                     {
                         "id": 8,
-                        "pregunta": "Can I cancel the reservation?"
+                        "pregunta": "What is the weight of the aircraft?"
                     }
                 ],
                 "respuestas": [
@@ -842,25 +842,25 @@
         },
         "S10": {
             "title": "International Destinations",
-            "imgHeader": "images/header2.png",
+            "imgHeader": "/images/header2.png",
             "duracion": "Estimated",
             "capacidad": "1 to 6 pax",
             "partida": "SADM-SADF-SADP",
             "recorrido": "Scheduled",
-            "imgMapa": "images/servicios/internacional/mapa1.png",
+            "imgMapa": "/images/servicios/internacional/mapa1.png",
             "p1": "We offer flights from Argentina to Uruguay, Peru, Colombia, and Brazil in our Piper Navajo aircraft, with capacity for up to 6 people (Pax).",
             "p2": "Whether for leisure or business travel, we are here to make your flight experience exceptional.",
             "p3": "You choose the destination, we take care of the rest!",
             "link": "Related link to service 1",
             "imgSlider": [
-                "images/servicios/internacionales/1.png",
-                "images/servicios/internacionales/2.png",
-                "images/servicios/internacionales/3.png",
-                "images/servicios/internacionales/4.png",
-                "images/servicios/internacionales/5.png",
-                "images/servicios/internacionales/8.png",
-                "images/servicios/internacionales/7.png",
-                "images/servicios/internacionales/6.png"
+                "/images/servicios/internacionales/1.png",
+                "/images/servicios/internacionales/2.png",
+                "/images/servicios/internacionales/3.png",
+                "/images/servicios/internacionales/4.png",
+                "/images/servicios/internacionales/5.png",
+                "/images/servicios/internacionales/8.png",
+                "/images/servicios/internacionales/7.png",
+                "/images/servicios/internacionales/6.png"
             ],
             "regalar": "Information on how to give service 1",
             "preguntasFrecuentes": {
@@ -891,11 +891,11 @@
                     },
                     {
                         "id": 7,
-                        "pregunta": "How long does the activity last?"
+                        "pregunta": "Can I cancel the reservation?"
                     },
                     {
                         "id": 8,
-                        "pregunta": "Can I cancel the reservation?"
+                        "pregunta": "What is the weight of the aircraft?"
                     }
                 ],
                 "respuestas": [
@@ -977,5 +977,11 @@
     "ESTA-PAGINA": "This page",
     "ATERRIZA": "will land soon",
     "MIENTRAS": "meanwhile you can discover",
-    "NUESTRAS": "our experiences"
+    "NUESTRAS": "our experiences",
+    "DURACION": "Duration",
+    "CAPACIDAD":"Maximum Capacity",
+    "PARTIDA": "Departure",
+    "RECORRIDO": "Route",
+    "ENVIAR": "SEND",
+    "BUTTON-VER-TODAS": "SEE ALL"
 }

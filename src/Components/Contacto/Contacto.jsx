@@ -50,11 +50,11 @@ const Contacto = () => {
                     </div>
                     <div className='col-lg-6 redes-contacto'>
                         <a href="mailto:info@bairesflights.com.ar">
-                            <img src="images/contacto/mail.png" alt="Mail Baires Flights" />
+                            <img src="/images/contacto/mail.png" alt="Mail Baires Flights" />
                             <h3>info@bairesflights.com.ar</h3>
                         </a>
-                        <a href="https://www.instagram.com/baires.flights/"><img src="images/contacto/insta.png" alt="Instagram Baires Flights" /> <h3>@baires.flights</h3></a>
-                        <a href="https://wa.me/+5491164930569?text=Hola,%20estoy%20en%20la%20página%20de%20Baires%20Flights%20y%20quiero%20pedir%20más%20información"><img src="images/contacto/wp.png" alt="Whatsapp" /> <h3>+54 9 11 6493-0569</h3></a>
+                        <a href="https://www.instagram.com/baires.flights/"><img src="/images/contacto/insta.png" alt="Instagram Baires Flights" /> <h3>@baires.flights</h3></a>
+                        <a href="https://wa.me/+5491164930569?text=Hola,%20estoy%20en%20la%20página%20de%20Baires%20Flights%20y%20quiero%20pedir%20más%20información"><img src="/images/contacto/wp.png" alt="Whatsapp" /> <h3>+54 9 11 6493-0569</h3></a>
                     </div>
                 </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.scss'
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
@@ -24,67 +24,45 @@ i18next.use(initReactI18next)
       en: {
         translation: en,
       },
-
       es: {
         translation: es,
       }
     }
-  }
+  });
 
-
-  )
-
-const router = createHashRouter([
-
-
+const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <Root />
-    ),
+    element: <Root />,
   },
   {
     path: "/experiencias",
-    element: (
-      <Experiencias />
-    ),
+    element: <Experiencias />,
   },
-
   {
     path: "/contacto",
-    element: (
-      <ContactoRoute />
-    ),
+    element: <ContactoRoute />,
   },
-
   {
     path: "/experiencias/:title",
-    element: (
-      <ServicioDetail />
-    ),
+    element: <ServicioDetail />,
   },
-
   {
     path: "/shop",
-    element: (
-      <Shop />
-    ),
+    element: <Shop />,
   },
-
   {
     path: "/enviado",
-    element: <MensajeEnviado />
+    element: <MensajeEnviado />,
   },
   {
     path: "/error",
-    element: <MensajeError/>
+    element: <MensajeError />,
   },
-
 ]);
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

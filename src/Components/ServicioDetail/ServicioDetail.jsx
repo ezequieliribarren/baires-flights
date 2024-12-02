@@ -998,14 +998,14 @@ const ServicioDetail = () => {
     useEffect(() => {
         // Convertir el título de la URL a minúsculas y quitar los guiones
         const formattedTitle = title ? title.toLowerCase().replace(/-/g, "") : "";
-    
+
         // Buscar el servicio correspondiente por su título (tanto en español como en inglés)
-        const servicioEncontrado = servicios.find(servicio => 
+        const servicioEncontrado = servicios.find(servicio =>
             servicio.title.toLowerCase() === formattedTitle || (servicio.titleEn && servicio.titleEn.toLowerCase() === formattedTitle)
         );
         setServicio(servicioEncontrado);
     }, [title]);
-    
+
 
     // Función para alternar la visibilidad de la respuesta
     const toggleAnswer = (index) => {
@@ -1065,39 +1065,39 @@ const ServicioDetail = () => {
             noneTraductor="none"
         >
             <div className="container-fluid p-5">
-            {title !== "Paracaidismo" && title !== "Skydiving" && (
-    <div className='row contenedor-descripcion-servicio'>
-        <div className="col-lg-3 caja-servicio">
-            <h5><img src="images/servicios/reloj.png" alt="" />Duración</h5>
-            <h4>{servicio.duracion}</h4>
-        </div>
-        <div className="col-lg-3 caja-servicio">
-            <h5><img src="images/servicios/person.png" alt="" />Capacidad Máxima</h5>
-            <h4>{servicio.capacidad}</h4>
-        </div>
-        <div className="col-lg-3 caja-servicio">
-            <h5><img src="images/servicios/map.png" alt="" />Partida</h5>
-            <h4>{servicio.partida}</h4>
-        </div>
-        <div className="col-lg-3 caja-servicio">
-            <h5><img src="images/servicios/recorrido.png" alt="" />Recorrido</h5>
-            <h4>{servicio.recorrido}</h4>
-        </div>
-    </div>
-)}
+                {title !== "Paracaidismo" && title !== "Skydiving" && (
+                    <div className='row contenedor-descripcion-servicio'>
+                        <div className="col-lg-3 caja-servicio">
+                            <h5><img src="/images/servicios/reloj.png" alt="" />{t("DURACION")}</h5>
+                            <h4>{servicio.duracion}</h4>
+                        </div>
+                        <div className="col-lg-3 caja-servicio">
+                            <h5><img src="/images/servicios/person.png" alt="" />{t("CAPACIDAD")}</h5>
+                            <h4>{servicio.capacidad}</h4>
+                        </div>
+                        <div className="col-lg-3 caja-servicio">
+                            <h5><img src="/images/servicios/map.png" alt="" />{t("PARTIDA")}</h5>
+                            <h4>{servicio.partida}</h4>
+                        </div>
+                        <div className="col-lg-3 caja-servicio">
+                            <h5><img src="/images/servicios/recorrido.png" alt="" />{t("RECORRIDO")}</h5>
+                            <h4>{servicio.recorrido}</h4>
+                        </div>
+                    </div>
+                )}
                 <div className="row mapa-description-servicio">
-                <div className="col-lg-6 imgMapa" >
-    {(title === "Piloto por un día" || title === "Pilot for a Day") && (
-        <Slider dots={true} infinite={true} speed={500} slidesToShow={1} slidesToScroll={1}>
-            <img src={servicio.imgMapa} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
-            <img src={servicio.imgMapa2} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
-            <img src={servicio.imgMapa3} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
-        </Slider>
-    )}
-    {title !== "Piloto por un día" && title !== "Pilot for a Day" && (
-        <img src={servicio.imgMapa} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
-    )}
-</div>
+                    <div className="col-lg-6 imgMapa" >
+                        {(title === "Piloto por un día" || title === "Pilot for a Day") && (
+                            <Slider dots={true} infinite={true} speed={500} slidesToShow={1} slidesToScroll={1}>
+                                <img src={servicio.imgMapa} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
+                                <img src={servicio.imgMapa2} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
+                                <img src={servicio.imgMapa3} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
+                            </Slider>
+                        )}
+                        {title !== "Piloto por un día" && title !== "Pilot for a Day" && (
+                            <img src={servicio.imgMapa} alt="Mapa de Recorrido" style={{ height: "100%", width: "100%" }} />
+                        )}
+                    </div>
                     <div className="col-lg-6 experiencia-servicio">
                         <div>
                             <h3>{t("LA-EXPERIENCIA")}</h3>

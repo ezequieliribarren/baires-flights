@@ -12,7 +12,7 @@ const Experiencias = () => {
       <SliderServices />
       <div className='d-flex justify-content-center margin-title'>
         <Link to="/experiencias">
-          <button className='button-1'>VER TODAS</button>
+          <button className='button-1'>{t("BUTTON-VER-TODAS")}</button>
         </Link>
       </div>
 

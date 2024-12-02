@@ -5,7 +5,7 @@ const MensajeEnviado = () => {
 
   useEffect(() => {
     const redirectTimer = setTimeout(() => {
-      window.location.href = 'https://www.artanium.com.ar';
+      window.location.href = 'https://bairesflights.com.ar/';
     }, 5000);
 
     const interval = setInterval(() => {

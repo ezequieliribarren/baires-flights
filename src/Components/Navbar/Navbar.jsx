@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ changeLanguage, selectedLanguage, noneTraductor }) => {
     const { t, i18n } = useTranslation();
@@ -22,6 +22,14 @@ const Navbar = ({ changeLanguage, selectedLanguage, noneTraductor }) => {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    // Función para hacer scroll a una sección en particular
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
     };
 
     return (
@@ -48,7 +56,8 @@ const Navbar = ({ changeLanguage, selectedLanguage, noneTraductor }) => {
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                             <Link
-                                to="/#nosotros" 
+                                to="/"
+                                onClick={() => scrollToSection("nosotros")}
                                 className="nav-link"
                             >
                                 {t("NOSOTROS")}
@@ -59,61 +68,35 @@ const Navbar = ({ changeLanguage, selectedLanguage, noneTraductor }) => {
                                 {t("SERVICIOS")}
                             </Link>
                             <ul className="dropdown-menu">
-                                <li >
-                                    <Link to={`/experiencias/${t('SERVICIOS_DETALLE.S1.title')}`} className="dropdown-item">
-                                        {t('SERVICIOS_DETALLE.S1.title')}
-                                    </Link>
-                                    <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S2.title`)}`} className="dropdown-item" >
-                                        {t(`SERVICIOS_DETALLE.S2.title`)}
-                                    </Link>
-                                    <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S3.title`)}`} className="dropdown-item" >
-                                        {t(`SERVICIOS_DETALLE.S3.title`)}
-                                    </Link>
-                                    <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S4.title`)}`} className="dropdown-item" >
-                                        {t(`SERVICIOS_DETALLE.S4.title`)}
-                                    </Link>
-                                    <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S5.title`)}`} className="dropdown-item" >
-                                        {t(`SERVICIOS_DETALLE.S5.title`)}
-                                    </Link>
-                                    <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S6.title`)}`} className="dropdown-item" >
-                                        {t(`SERVICIOS_DETALLE.S6.title`)}
-                                    </Link>
-                                    <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S7.title`)}`} className="dropdown-item" >
-                                        {t(`SERVICIOS_DETALLE.S7.title`)}
-                                    </Link>
-                                    <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S8.title`)}`} className="dropdown-item" >
-                                        {t(`SERVICIOS_DETALLE.S8.title`)}
-                                    </Link>
-                                    <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S9.title`)}`} className="dropdown-item" >
-                                        {t(`SERVICIOS_DETALLE.S9.title`)}
-                                    </Link>
-                                    <Link to={`/experiencias/${t(`SERVICIOS_DETALLE.S10.title`)}`} className="dropdown-item" >
-                                        {t(`SERVICIOS_DETALLE.S10.title`)}
-                                    </Link>
-
-
-                                </li>
-
-
+                                {[...Array(10)].map((_, index) => (
+                                    <li key={index}>
+                                        <Link 
+                                            to={`/experiencias/${t(`SERVICIOS_DETALLE.S${index + 1}.title`)}`} 
+                                            className="dropdown-item"
+                                        >
+                                            {t(`SERVICIOS_DETALLE.S${index + 1}.title`)}
+                                        </Link>
+                                    </li>
+                                ))}
                             </ul>
                         </li>
                         <li className="nav-item esp-en">
-                        <div className={`nav-link ${noneTraductor}`}>
+                            <div className={`nav-link ${noneTraductor}`}>
                                 <button
-                                    className={` ${i18n.language === 'es' ? 'active-language' : 'inactive-language'}`}
+                                    className={`${i18n.language === 'es' ? 'active-language' : 'inactive-language'}`}
                                     onClick={() => handleLanguageChange('es')}
                                 >ES
                                 </button>
                                 /
                                 <button
-                                    className={` ${i18n.language === 'en' ? 'active-language' : 'inactive-language'}`}
+                                    className={`${i18n.language === 'en' ? 'active-language' : 'inactive-language'}`}
                                     onClick={() => handleLanguageChange('en')}
                                 >EN
                                 </button>
                             </div>
                         </li>
                         <li className="nav-item">
-                            <Link style={{color: "#FFCF00"}} to="/shop" className="nav-link">Shop</Link>
+                            <Link style={{ color: "#FFCF00" }} to="/shop" className="nav-link">Shop</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/contacto" className="nav-link contact">{t("CONTACTO")}</Link>
