@@ -15,7 +15,7 @@ const Footer = () => {
             <div className='col-sm-6 redes-footer'>
               <a href="https://www.instagram.com/baires.flights/"><img src="/images/contacto/insta.png" alt="Instagram" />@baires.flights</a>
               <a href="mailto:info@bairesflights.com.ar"><img src="/images/contacto/mail.png" alt="Mail" />info@baires.flights.com.ar</a>
-              <a href="https://wa.me/+5491164930569?text=Hola,%20estoy%20en%20la%20página%20de%20Baires%20Flights%20y%20quiero%20pedir%20más%20información"><img src="/images/contacto/wp.png" alt="Whatsapp" />+54 9 11 6493-0569</a>
+              <a href="https://wa.me/+5491135573808?text=Hola,%20estoy%20en%20la%20página%20de%20Baires%20Flights%20y%20quiero%20pedir%20más%20información"><img src="/images/contacto/wp.png" alt="Whatsapp" />+54 9 11 3557 3808</a>
             </div>
           </div>
 
